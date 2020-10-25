@@ -23,3 +23,6 @@ Route::get('/', function () {
 });*/
 
 Route::get('home',[HomeController::class,'index'])->name('home.index');
+
+Route::get('hello/{name?}',[\App\Http\Controllers\HelloController::class,'index'])->name('hello.index');
+
